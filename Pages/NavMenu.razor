@@ -76,7 +76,7 @@
 
 @if (_deletePopUpOpen)
 {
-    <Confirmation Caption="Delete a Chat"
+    <Confirmation Caption="Supprimer une conversation"
         Message="@_popUpText"
         OnClose="@OnConfirmationClose"
         Type="Confirmation.Category.DeleteNot">
@@ -86,7 +86,7 @@
 
 @if (_renamePopUpOpen)
 {
-    <Input Caption="Rename a Chat"
+    <Input Caption="Renommer une conversation"
         Value="@_popUpText"
         OnClose="@OnInputClose" >
     </Input>
@@ -143,7 +143,7 @@
     {
         _deletePopUpOpen = true;
         _sessionId = id;
-        _popUpText = $"Do you want to delete the chat \"{title}\"?";
+        _popUpText = $"Voulez-vous supprimer la conversation \"{title}\"?";
     }
 
     public void UpdateNavMenuDisplay(string reason = "")

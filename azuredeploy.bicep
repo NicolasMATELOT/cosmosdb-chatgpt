@@ -42,10 +42,10 @@ var openAiSettings = {
   sku: openAiSku
   maxTokens: '3000'
   model: {
-    name: 'text-davinci-003'
-    version: '1'
+    name: 'gpt-35-turbo'
+    version: '0301'
     deployment: {
-      name: 'chatmodel'
+      name: 'gpt-35'
     }
   }
 }
